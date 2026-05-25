@@ -1,6 +1,6 @@
 ﻿namespace QuizApp
 {
-    class Program
+    partial class Program
     {
         public static void Main()
         {
@@ -13,7 +13,6 @@
             WELCOME TO QUIZ APP
             ========================================
             ");
-
         }
     }
 }
