@@ -3,12 +3,12 @@ namespace QuizApp
     partial class Question
     {
         public  string Title {get;}
-        private readonly string [] possibleAnswers = [];
+        public string [] PossibleAnswers {get;}
         private readonly string correctAnswer = "";
         public Question(string title , string[] possibleAnswers, string correctAnswer)
         {
             Title = title;
-            this.possibleAnswers = possibleAnswers;
+            PossibleAnswers = possibleAnswers;
             this.correctAnswer = correctAnswer;
         }
     }

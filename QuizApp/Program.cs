@@ -18,6 +18,19 @@
             WELCOME TO QUIZ APP
             ========================================
             ");
+            byte i = 0;
+            while(i < questionsArray.Length)
+            {
+                Question question = questionsArray[i];
+                Console.WriteLine(QuestionBox);
+                Console.WriteLine(question.Title);
+                foreach(string el in question.PossibleAnswers)
+                {
+                    Console.WriteLine(el);
+                }
+                string? answer = Console.ReadLine();
+                i++;
+            }
         }
     }
 }
