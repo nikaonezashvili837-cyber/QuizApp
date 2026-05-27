@@ -20,6 +20,7 @@
             ========================================
             ");
             byte i = 0;
+            byte correctAnswers = 0;
             while (i < questionsArray.Length)
             {
                 Question question = questionsArray[i];
@@ -30,11 +31,10 @@
                     Console.WriteLine(el);
                 }
                 string? answer = Console.ReadLine();
-                byte correctAnswer = 0;
-                correctAnswer+=CheckAnswer(answer,question);
+                correctAnswers+=CheckAnswer(answer,question);
                 i++;
             }
-
+            Console.WriteLine($"Correct answers: {correctAnswers} out of 3");
         }
         public static byte CheckAnswer(string? answer, Question question)
         {
